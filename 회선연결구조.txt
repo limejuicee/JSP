@@ -1,0 +1,20 @@
+Connection conn=null;
+		Statement stmt=null;
+		ResultSet rs=null;
+		
+		String url="jdbc:mysql://127.0.0.1:3306/sample";
+		String db_id="root";
+		String db_pw="iotiot";
+		String sql="select * from student;";
+		try {
+			
+		}catch(Exception e) {
+			System.out.println("접속 중 오류발생 : "+e);
+		}finally {
+			//회선 종료처리도 try-catch안에 제작해야함
+			try {
+				if(rs!=null)rs.close();
+				if(stmt!=null)stmt.close();
+				if(conn!=null)conn.close();
+			}catch(Exception ex) {
+				System.out.println("접속 해제 중 오류발생 : "+ex);
