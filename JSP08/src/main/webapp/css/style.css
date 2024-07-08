@@ -1,0 +1,52 @@
+@charset "utf-8";
+#wrap {
+	width:300px;
+	border:5px solid red;
+	margin:0 auto;
+}
+#wrap > div {
+	width:98px;
+	height:34px;
+	border:1px solid black;
+	float:left;
+		
+}
+.th {
+	font-weight:600;
+	font-size:20px;
+	text-align:center;
+	line-height:34px;
+}
+.td {
+	text-align:center;
+	line-height:34px;
+}
+#wrap > .result {
+	width:298px;
+	height:120px;
+	border:1pox solid black;
+}
+#wrap:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+h1 {
+	margin : 1px;
+	text-align:center;
+	
+}
+input[type="submit"] {
+	width:100px;
+	height:32px;
+	border:2px solid black;
+	background-color:white;
+	font-size: 20px;
+	font-weight:600;
+	display:block;
+	margin:0 auto;
+}
+input[type="submit"]:hover{
+	background-color:black;
+	color:white;
+}
